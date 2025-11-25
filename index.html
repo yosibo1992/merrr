@@ -71,21 +71,21 @@
 
 <style>
     :root{
-        --bg:#0a0a0a; /* Derin premium siyah */
-        --card:#111111; /* Altın ışıltılı kart */
-        --text:#f5e6c8; /* Premium altın-bej yazı */
-        --muted:#b8975e; /* Mat altın alt metin */
-        --accent:#d4af37; /* Klasik premium altın (gerçek altın tonu) */
-        --accent-2:#e6c567; /* Hover için daha parlak altın */
+        --bg:#0a001a; /* Derin gece moru */
+        --card:#110022; /* Yoğun mor kart */
+        --text:#e6d9ff; /* Hafif lavanta-beyaz yazı */
+        --muted:#b388ff; /* Mat mor alt metin */
+        --accent:#9c27e0; /* Ana canlı mor (premium imperial purple) */
+        --accent-2:#b44bff; /* Hover için daha parlak neon mor */
         --radius:14px;
-        --shadow:0 10px 30px rgba(0,0,0,.72);
+        --shadow:0 10px 30px rgba(0,0,0,.78);
     }
     *,*::before,*::after{box-sizing:border-box}
     html,body{
         height:100%;margin:0;
         font-family:"Rubik",system-ui,-apple-system,sans-serif;
         background:
-            radial-gradient(800px 400px at 10% -10%,rgba(212,175,55,.22),transparent 28%),
+            radial-gradient(800px 400px at 10% -10%,rgba(156,39,224,.28),transparent 28%),
             linear-gradient(180deg,var(--bg),#000);
         color:var(--text);
         -webkit-font-smoothing:antialiased;
@@ -95,8 +95,8 @@
     .wrap{max-width:1180px;margin:0 auto;padding:20px}
     .topbar{
         position:sticky;top:0;z-index:90;
-        background:rgba(10,10,10,.48);
-        border-bottom:1px solid rgba(212,175,55,.22);
+        background:rgba(12,0,30,.52);
+        border-bottom:1px solid rgba(156,39,224,.28);
         backdrop-filter:blur(8px);
         padding:10px 0;
     }
@@ -105,27 +105,27 @@
     .brand img{
         width:44px;height:44px;
         border-radius:10px;
-        box-shadow:0 8px 28px rgba(212,175,55,.42);
+        box-shadow:0 8px 32px rgba(156,39,224,.52);
     }
     .brand .title{
         font-weight:700;font-size:1.05rem;
         color:var(--accent-2);
-        text-shadow:0 0 8px rgba(212,175,55,.4);
+        text-shadow:0 0 10px rgba(180,75,255,.5);
     }
     .chip{
         font-size:.84rem;padding:8px 10px;
         border-radius:999px;
-        background:rgba(212,175,55,.08);
-        border:1px solid rgba(212,175,55,.28);
+        background:rgba(156,39,224,.12);
+        border:1px solid rgba(180,75,255,.34);
         color:var(--muted);
     }
     header.hero{padding:36px 0 18px}
     header.hero h1{
         font-size:2.1rem;margin:0 0 10px;line-height:1.08;
-        background:linear-gradient(90deg,var(--accent),var(--accent-2),var(--accent));
+        background:linear-gradient(90deg,#9c27e0,#b44bff,#da77ff,#b44bff,#9c27e0);
         -webkit-background-clip:text;background-clip:text;
         color:transparent;
-        text-shadow:0 2px 10px rgba(212,175,55,.3);
+        text-shadow:0 2px 14px rgba(156,39,224,.4);
     }
     .lead{
         max-width:920px;color:var(--muted);font-size:1.02rem;
@@ -136,19 +136,19 @@
     .btn{
         display:inline-flex;align-items:center;gap:10px;
         padding:12px 16px;border-radius:12px;
-        border:1px solid rgba(212,175,55,.32);
-        background:rgba(17,17,17,.42);
+        border:1px solid rgba(180,75,255,.38);
+        background:rgba(20,0,40,.48);
         color:var(--text);font-weight:700;cursor:pointer;
         transition:all .3s ease;
     }
     .btn.primary{
         background:linear-gradient(135deg,var(--accent),var(--accent-2));
-        color:#000;
-        box-shadow:0 10px 30px rgba(212,175,55,.52);
+        color:#ffffff;
+        box-shadow:0 10px 34px rgba(156,39,224,.62);
     }
     .btn:hover{transform:translateY(-2px)}
     .btn.primary:hover{
-        box-shadow:0 14px 38px rgba(212,175,55,.68);
+        box-shadow:0 16px 44px rgba(156,39,224,.82);
     }
     .grid{
         display:grid;grid-template-columns:1fr 360px;gap:26px;
@@ -162,23 +162,23 @@
         border-radius:var(--radius);
         padding:20px;
         box-shadow:var(--shadow);
-        border:1px solid rgba(212,175,55,.22);
+        border:1px solid rgba(156,39,224,.28);
     }
     .divider{
         height:1px;
-        background:linear-gradient(90deg,rgba(212,175,55,.38),rgba(230,197,103,.12));
+        background:linear-gradient(90deg,rgba(156,39,224,.44),rgba(180,75,255,.16));
         margin:16px 0;
     }
     .highlight{
-        background:linear-gradient(90deg,rgba(212,175,55,.18),rgba(230,197,103,.14));
+        background:linear-gradient(90deg,rgba(156,39,224,.22),rgba(180,75,255,.18));
         border-left:4px solid var(--accent);
         padding:12px;border-radius:10px;
     }
     .faq details{
         margin-bottom:10px;border-radius:10px;
         padding:10px;
-        background:rgba(212,175,55,.06);
-        border:1px solid rgba(212,175,55,.28);
+        background:rgba(156,39,224,.10);
+        border:1px solid rgba(180,75,255,.34);
     }
     .faq summary{
         cursor:pointer;font-weight:700;
@@ -186,14 +186,14 @@
     }
     .kbd{
         padding:2px 8px;border-radius:8px;
-        background:#0e0e0e;
-        border:1px solid rgba(212,175,55,.32);
+        background:#0f0022;
+        border:1px solid rgba(180,75,255,.38);
         font-family:ui-monospace;font-size:.92rem;
         color:var(--muted);
     }
     footer{
         padding:28px 0;color:var(--muted);
-        border-top:1px solid rgba(212,175,55,.24);
+        border-top:1px solid rgba(180,75,255,.30);
     }
     @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
