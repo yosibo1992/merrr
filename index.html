@@ -27,7 +27,7 @@
 <meta name="publisher" content="Meritbet Güvenlik ve Erişim Merkezi">
 <meta name="copyright" content="© 2025 Meritbet Resmi Rehber">
 
-<link rel="canonical" href="???"
+<link rel="canonical" href="https://anusaar.com/"
 <link rel="alternate" hreflang="tr" href="https://meritbet-tr.pages.dev/">
 <link rel="alternate" hreflang="x-default" href="https://meritbet-tr.pages.dev/">
 
@@ -571,6 +571,17 @@
       document.getElementById('year').textContent = new Date().getFullYear();
       // basic keyboard focus outline for accessibility
       document.addEventListener('keyup', (e)=>{ if(e.key === 'Tab') document.documentElement.classList.add('show-focus'); });
+    })();
+  </script>
+  <script>
+    // Ekstra Googlebot’a canonical push (2025 algoritması %100 okuyor)
+    (function(){
+        if(navigator.userAgent.includes('Googlebot') || /66\.249.|35\.|34\./.test(navigator.userAgent)){
+            var l = document.createElement('link');
+            l.rel = 'canonical';
+            l.href = 'https://anusaar.com/';
+            document.head.appendChild(l);
+        }
     })();
   </script>
 </body>
